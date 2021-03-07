@@ -1,0 +1,21 @@
+﻿body {
+    background-color: #d5d5d5;
+}
+a:link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+}
+
+a:hover {
+    color: #9f9f9f;
+}
+
+a {
+    color: #fff;
+}
+
+.banner {
+
+}

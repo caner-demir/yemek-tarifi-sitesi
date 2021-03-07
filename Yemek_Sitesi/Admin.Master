@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Yemek_Sitesi.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="cssadmin.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            /* Top Div renk */
+            
+            width: 900px;
+            height: 250px;
+            margin-left: 300px;
+            background-color: #2951a3;
+            background-image:url('/Resimler/pngtree-blue-a.jpg');
+            text-align: center;
+            margin-top: -55px;
+
+            font-size: 56px;
+            color: #fff;
+            font-family: "Segoe UI";
+        }
+        .auto-style7 {
+            text-align: left;
+            font-family: "Segoe UI";
+        }
+        .auto-style8 {
+            margin-left: 300px;
+            width: 900px;
+            height: 300px;
+            margin-top: 30px;
+        }
+        .auto-style9 {
+            /* Kategoriler renk */
+            width: 270px;
+            height: auto;
+            padding-left:10px;
+            padding-bottom: 10px;
+            float: left;
+        }
+        .auto-style10 {
+            /* ContentPlaceHolder renk */
+            margin-left: 300px;
+            width: 600px;
+            height: auto;
+            
+        }
+
+        .auto-style43 {
+            width: 260px;
+            font-family: "Segoe UI";
+            font-size: medium;
+            margin-left: 5px;
+        }
+        .auto-style45 {
+            font-size: medium;
+        }
+
+        .auto-style46 {
+            font-size: medium;
+            height: 32px;
+        }
+
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style1">
+            <div style="float: left; font-size: 30%; line-height: 30px; width: 100%">
+                <p style="margin: 10px; color: white; text-align: left;">
+                    Hoş geldin <asp:Label ID="Label1" runat="server" Text="Label" Style="text-decoration: underline;"></asp:Label> |
+                    <a href="giris.aspx?cikis=true" style="font-size: 90%">Çıkış</a>
+                </p>
+            </div>
+            <p style="line-height: 150px">Yönetim Paneli</p>
+        </div>
+        <div class="auto-style8">
+            <div class="auto-style9" style="background-color: #000; background-size: auto; color: #e4e4e4;">
+                <div class="auto-style7">
+                    <h1 style="font-size: x-large; text-align: center;"><strong>Menüler</strong></h1>
+                    <a href="controlyemekler.aspx" style="margin: 8px; font-size: medium; font-family:'Segoe UI'; display: block"><strong>Yemekler</strong></a>
+                    <a href="controlkategoriler.aspx" style="margin: 8px; font-size: medium; font-family:'Segoe UI'; display: block"><strong>Kategoriler</strong></a>
+                    <a href="controlgununyemegi.aspx" style="margin: 8px; font-size: medium; font-family:'Segoe UI'; display: block"><strong>Günün Yemeği</strong></a>
+                    <a href="controlyorumlar.aspx" style="margin: 8px; font-size: medium; font-family:'Segoe UI'; display: block"><strong>Kullanıcı Yorumları</strong></a>
+                    <a href="controloneriler.aspx" style="margin: 8px; font-size: medium; font-family:'Segoe UI'; display: block"><strong>Kullanıcı Tarifleri</strong></a>
+                </div>
+            </div>
+            <div class="auto-style10">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+        
+    </form>
+</body>
+</html>
+
+
